@@ -1,3 +1,33 @@
 body {
 	background-color: skyblue;
 }
+
+h1 {
+	text-align: center;
+	font-size: 70px; 
+}
+
+div.tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ffaa99;
+}
+
+div.tabs button {
+	background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 25px;
+}
+
+div.tabs button:hover {
+    background-color: #f55;
+}
+
+div.tabs button.active {
+    background-color: #f00;
+}
