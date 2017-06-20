@@ -2,23 +2,17 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="../Style/IndexStyle.css">
-		<script type="text/javascript" src="../Script/IndexScript.js">
-		
-		</script>
+		<script type="text/javascript" src="../Script/IndexScript.js"> </script>
 		<title>My Page</title>
 	</head>
 <body>
-
 	<h1> Willkommen </h1>
 	<div class="tabs">
-		<button class="tablinks" onclick="openCity(event, 'London')">Inhalt</button>
-  		<button class="tablinks" onclick="openCity(event, 'Paris')">Blog</button>
-  		<button class="tablinks" onclick="openCity(event, 'Tokyo')">Kontakt</button>
+		<button class="tablinks active" onclick="openCity(event, 'Inhalt')">Inhalt</button>
+  		<button class="tablinks" onclick="openCity(event, 'Blog')">Blog</button>
+  		<button class="tablinks" onclick="openCity(event, 'Kontakt')">Kontakt</button>
 	</div>
-	<div id="tabcontent">
- 
-	</div>
-	
-	<p> Diese Seite ist noch in Arbeit </p>
+	<embed id="tabcontent" src="Inhalt.html" align="bottom" width="100%" height="700px" />
+ 	
 </body>
 </html>
