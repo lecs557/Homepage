@@ -7,11 +7,17 @@
 	</head>
 <body>
 	<h1> Willkommen </h1>
-	<div class="tabs">
-		<button class="tablinks active" onclick="openCity(event, 'Deutsch')">Deutsch</button>
-  		<button class="tablinks" onclick="openCity(event, 'Englisch')">Englisch</button>
-  		<button class="tablinks" onclick="openCity(event, 'Französisch')">Französisch</button>
-  		<button class="tablinks" onclick="openCity(event, 'Spanisch')">Spanisch</button>
+	<div id="tabs">
+		<button class="tablinks active" onmouseover="rollOut(event)">Deutsch</button>
+  		<button class="tablinks" onmouseover="rollOut(event)">Englisch</button>
+  		<button class="tablinks" onmouseover="rollOut(event)">Französisch</button>
+  		<button class="tablinks" onmouseover="rollOut(event)">Spanisch</button>
+	</div>
+	<div id="rollOut">
+		<button class="tablinks active" onclick="changeTabs(event, 'Deutsch')">Deutsch</button> 
+  		<button class="tablinks" onclick="changeTabs(event, 'Englisch')">Englisch</button> 
+  		<button class="tablinks" onclick="changeTabs(event, 'Französisch')">Französisch</button> 
+  		<button class="tablinks" onclick="changeTabs(event, 'Spanisch')">Spanisch</button> 
 	</div>
 	<embed id="tabcontent" src="Deutsch.html" align="bottom" width="100%" height="700px" />
  	
