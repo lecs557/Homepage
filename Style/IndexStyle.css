@@ -26,6 +26,15 @@ button {
 	font-size: 25px; width: 200px;
 }
 
+#rollOut {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: yellow;
+    float: left;
+    height: 50px;	
+    position: relative;
+}	
+
 #rollOut button {
 	font-size: 17px; width: 120px;
 }

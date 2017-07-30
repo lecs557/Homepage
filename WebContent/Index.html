@@ -8,18 +8,18 @@
 <body>
 	<h1> Willkommen </h1>
 	<div id="tabs">
-		<button class="tablinks active" onmouseover="rollOut(event)">Deutsch</button>
-  		<button class="tablinks" onmouseover="rollOut(event)">Englisch</button>
-  		<button class="tablinks" onmouseover="rollOut(event)">Französisch</button>
-  		<button class="tablinks" onmouseover="rollOut(event)">Spanisch</button>
+		<button class="tablinks" onmouseover="rollOut(0)" onmouseout="reset()">Deutsch</button>
+  		<button class="tablinks" onmouseover="rollOut(1)" onmouseout="reset()">Englisch</button>
+  		<button class="tablinks" onmouseover="rollOut(2)" onmouseout="reset()">Französisch</button>
+  		<button class="tablinks" onmouseover="rollOut(3)" onmouseout="reset()">Spanisch</button>
 	</div>
-	<div id="rollOut">
+	<div id="rollOut" style="width: 0px">
 		<button class="tablinks active" onclick="changeTabs(event, 'Deutsch')">Deutsch</button> 
   		<button class="tablinks" onclick="changeTabs(event, 'Englisch')">Englisch</button> 
-  		<button class="tablinks" onclick="changeTabs(event, 'Französisch')">Französisch</button> 
-  		<button class="tablinks" onclick="changeTabs(event, 'Spanisch')">Spanisch</button> 
+		<button class="tablinks" onclick="changeTabs(event, 'Französisch')">Französisch</button> 
+		<button class="tablinks" onclick="changeTabs(event, 'Spanisch')">Spanisch</button> 
 	</div>
 	<embed id="tabcontent" src="Deutsch.html" align="bottom" width="100%" height="700px" />
- 	
+ 	<script type="text/javascript">init();</script>
 </body>
 </html>
